@@ -24,5 +24,5 @@ class Parse(Resource):
         data = request.json
         
         ret_data = get_minion_id(data)        
-
+        print("Got: {0}".format(ret_data))
         return ret_data
