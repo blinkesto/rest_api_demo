@@ -104,6 +104,6 @@ def get_minion_id(data):
     for fqdn in host_list:
         server = Server.query.filter(Server.fqdn == fqdn).one()
         print("Appending: {0}".format(server.minion_id))
-        fqdn_list.append(server)
+        fqdn_list.append(server.minion_id)
 
     return fqdn_list
