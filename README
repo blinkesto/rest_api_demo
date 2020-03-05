@@ -1,1 +1,1000 @@
-
+   30  git checkout release/koy_2020_Sprint_02 
+   31  fab -H prahtdooley@10.58.143.142 build ad_hoc remote_deploy     
+   32  git push
+   33  ssh prahtdooley@10.58.143.142     
+   34  git checkout master
+   35  git pull
+   36  fab -H prahtdooley@10.58.143.142 build ad_hoc remote_deploy     
+   37  git checkout flex/nwr2.0
+   38  git checkout flex/net2.0
+   39  fab -H prahtdooley@10.58.143.142 build ad_hoc remote_deploy     
+   40  hhistory 
+   41  history 
+   42  git checkout release/koy_2020_Sprint_02 
+   43  fab -H prahtdooley@10.58.143.142 build ad_hoc remote_deploy     
+   44  git checkout flex/net2.0
+   45  git commit -am 'Remove linux processing'
+   46  git push
+   47  git pull
+   48  git push
+   49  git commit -am 'Add try catch to _process_qa_docs'
+   50  git push
+   51  git commit -am 'Add placeholder for linux results '
+   52  git push
+   53  fab -H prahtdooley@10.58.143.142 build ad_hoc remote_deploy     
+   54  git checkout master
+   55  git fetch 
+   56  git pull
+   57  git pull origin release/koy_2020_Sprint_02
+   58  git commit -am 'Merge with net2.0'
+   59  git push origin HEAD
+   60  ~/bin/update_master.sh 
+   61  git rest
+   62  git reset 
+   63  git pull
+   64  git checkout release/koy_2020_Sprint_02
+   65  git pull origin flex/net2.0
+   66  git commit
+   67  git commit -am 'Merge net2.0'
+   68  git push origin HEAD
+   69  git checkout master
+   70  git reset 
+   71  git status
+   72  git reset --hard HEAD^
+   73  git checkout release/koy_2020_Sprint_02
+   74  git pull
+   75  git status
+   76  git checkout master
+   77  git fetch
+   78  git update
+   79  git pull
+   80  git checkout -b koy_test
+   81  git checkout release/koy_2020_Sprint_02
+   82  git stash
+   83  git checkout release/koy_2020_Sprint_02
+   84  git pull
+   85  git checkout koy_test
+   86  git stash pop
+   87  git status
+   88  git push -u origin koy_test
+   89  git commit -am 'Passed QC'
+   90  git push
+   91  fab -H prahtdooley@10.58.143.142 build ad_hoc remote_deploy     
+   92  git commit -am 'Fixed tests'
+   93  git push
+   94  ~/bin/update_master.sh 
+   95  git push
+   96  fab -H prahtdooley@10.58.143.142 build ad_hoc remote_deploy     
+   97  git stash
+   98  git checkout bugfix/KTECHAUTOM-1721
+   99  ~/bin/update_master.sh 
+  100  git checkout bugfix/KTECHAUTOM-1721 
+  101  ~/bin/update_master.sh 
+  102  git checkout feature/KTECHAUTOM-1783-Update-QC-script-shortname-handling 
+  103  fab -H prahtdooley@10.58.143.142 build ad_hoc remote_deploy     
+  104  ssh prahtdooley@10.58.143.142     
+  105  ls -l
+  106  cd projects/salt/salt-state/
+  107  ls -l
+  108  git status
+  109  git commit -am 'Cleanup'
+  110  git push
+  111  git checkout development 
+  112  git pull
+  113  git commit -am 'Cleanup'
+  114  git push
+  115  git checkout feature/get_mininon_by_nslookup
+  116  git pull
+  117  ssh prahtdooley@10.58.143.142     
+  118  fab -H prahtdooley@10.58.143.142 build ad_hoc remote_deploy     
+  119  ~/bin/update_master.sh 
+  120  fab -H prahtdooley@10.58.143.142 build ad_hoc remote_deploy     
+  121  git status
+  122  git push
+  123  git pull
+  124  git push
+  125  git pull
+  126  git pull origin HEAD
+  127  git commit -am 'Add _get_minion_id_by_glob'
+  128  git push
+  129  git checkout flex/net2.0
+  130  git pull
+  131  git checkout feature/KTECHAUTOM-1783-Update-QC-script-shortname-handling
+  132  git push
+  133  git checkout master
+  134  git checkout feature/PassedQC
+  135  ~/bin/update_master.sh 
+  136  git checkout feature/PassedQC
+  137  git commit -am 'Passed QC'
+  138  git push
+  139  git checkout feature/get_mininon_by_nslookup
+  140  ~/bin/update_master.sh 
+  141  git checkout feature/get_mininon_by_nslookup
+  142  fab -H prahtdooley@10.58.143.142 build ad_hoc remote_deploy     
+  143  git commit -am '_get_minion_id_by_nslookup works'
+  144  git push
+  145  git checkout development
+  146  git pull
+  147  git checkout feature/_get_minion_id_by_appending_domain
+  148  fab -H prahtdooley@10.58.143.142 build ad_hoc remote_deploy     
+  149  git commit -am '_get_minion_id_by_appending_domain'
+  150  git checkout development
+  151  git branch --merged
+  152  git checkout feature/get_mininon_by_nslookup
+  153  fab -H prahtdooley@10.58.143.142 build ad_hoc remote_deploy     
+  154  git commit -am 'Enable all new shortname searches'
+  155  git push
+  156  ~/bin/update_master.sh 
+  157  git pull
+  158  ~/bin/update_master.sh 
+  159  git checkout feature/refactor
+  160  ssh prahtdooley@10.58.143.142     
+  161  fab -H prahtdooley@10.58.143.142 build ad_hoc remote_deploy     
+  162  git checkout development
+  163  ~/bin/update_master.sh 
+  164  git status
+  165  git checkout master
+  166  git stash
+  167  ~/bin/update_master.sh 
+  168  git checkout master 
+  169  git fetch
+  170  git checkout bugfix/KTECHAUTOM-1804-local-variable-'fail_reason'-referenced-before-assignment
+  171  git pull
+  172  git fetch
+  173  git status
+  174  git branch -a
+  175  git checkout bugfix/KTECHAUTOM-1804-local-variable-'fail_reason'-referenced-before-assignment
+  176  git branch -r
+  177  git fetch
+  178  git checkout bugfix/KTECHAUTOM-1804
+  179  git commit -am 'Fixed missing fail_reason var'
+  180  git push
+  181  git commit -am 'Add Text to QC exception'
+  182  git push
+  183  git checkout development
+  184  git pull
+  185  git checkout bugfix/KTECHAUTOM-1804
+  186  git push
+  187  git push -u origin bugfix/KTECHAUTOM-1804
+  188  git checkout master 
+  189  git fetch
+  190  git checkout feature/refactor
+  191  git pull
+  192  git checkout development 
+  193  git pull
+  194  fab -H prahtdooley@10.58.143.142 build ad_hoc remote_deploy     
+  195  git commit -am 'fail_reason'
+  196  git push
+  197  git checkout feature/refactor
+  198  git pull
+  199  fab -H prahtdooley@10.58.143.142 build ad_hoc remote_deploy     
+  200  git commit -am 'Refactor def _find_minion_id(host_list, hostname_map, minion_map_filename, timeout=30):
+  201  git commit -am 'Refeactor _find_minion_id'
+  202  git push
+  203  git checkout development 
+  204  git tag
+  205  git tag -l 'Before refactor'
+  206  git tag
+  207  git tag -a v0.1 -m 'Before refactor'
+  208  git tag
+  209  git pull
+  210  fab -H prahtdooley@10.58.143.142 build ad_hoc remote_deploy     
+  211  git checkout master 
+  212  fab -H prahtdooley@10.58.143.142 build ad_hoc remote_deploy      
+  213  git fetch
+  214  git checkout bugfix/KTECHAUTOM-1807
+  215  fab -H prahtdooley@10.58.143.142 build ad_hoc remote_deploy      
+  216  git checkout master 
+  217  git checkout development
+  218  git pull
+  219  git checkout KTECHAUTOM-1815-Build-#375-has-incorrect-kpmg_dcrating-tattoo-entry-
+  220  git checkout master 
+  221  git pull
+  222  git fetch
+  223  git checkout KTECHAUTOM-1815-Build-#375-has-incorrect-kpmg_dcrating-tattoo-entry-
+  224  git stash
+  225  git checkout KTECHAUTOM-1815-Build-#375-has-incorrect-kpmg_dcrating-tattoo-entry-
+  226  git push
+  227  git checkout master
+  228  git pull
+  229  git checkout KTECHAUTOM-1815-Build-#375-has-incorrect-kpmg_dcrating-tattoo-entry-
+  230  fab -H prahtdooley@10.58.143.142 build ad_hoc remote_deploy      
+  231  git reset --hard
+  232  fab -H prahtdooley@10.58.143.142 build ad_hoc remote_deploy      
+  233  git commit -am 'Add additonal data types'
+  234  git push
+  235  git checkout master
+  236  git pull
+  237  fab -H prahtdooley@10.58.143.142 build ad_hoc remote_deploy       
+  238  git checkout development 
+  239  git checkout KTECHAUTOM-1815-Build-#375-has-incorrect-kpmg_dcrating-tattoo-entry-
+  240  git commit -am 'Add client data types'
+  241  git push
+  242  git checkout development 
+  243  git pull
+  244  git checkout master
+  245  git pull
+  246  giut stash
+  247  git stash
+  248  git checkout development 
+  249  git pull
+  250  git checkout bugfix/KTECHAUTOM-1817-host-missing-from-ret
+  251  ~/bin/update_master.sh 
+  252  git checkout master
+  253  git fetch
+  254  git checkout bugfix/KTECHAUTOM-1817-host-missing-from-ret
+  255  fab -H prahtdooley@10.58.143.142 build ad_hoc remote_deploy       
+  256  git commit -am 'missing _'
+  257  git push
+  258  git checkout development 
+  259  git pull
+  260  git checkout master
+  261  git pull
+  262  git checkout flex/net2.0
+  263  git pull
+  264  git checkout bugfix/KTECHAUTOM-1817-host-missing-from-ret
+  265  git push
+  266  git checkout master
+  267  fab -H prahtdooley@10.58.143.142 build ad_hoc remote_deploy       
+  268  git checkout KTECHAUTOM-1822
+  269  git checkout master 
+  270  git fetch
+  271  git checkout KTECHAUTOM-1822 
+  272  fab -H prahtdooley@10.58.143.142 build ad_hoc remote_deploy        
+  273  git checkout development
+  274  git checkout KTECHAUTOM-1822
+  275  git checkout development 
+  276  git pull
+  277  git checkout
+  278  git checkout bugfix/KTECHAUTOM-1824
+  279  git checkout master
+  280  git fetch
+  281  git checkout bugfix/KTECHAUTOM-1824
+  282  ls -l
+  283  clear 
+  284  fab -H prahtdooley@10.58.143.142 build ad_hoc remote_deploy        
+  285  fab -H prahtdooley@10.58.143.142 build ad_hoc remote_deploy         
+  286  git checkout master 
+  287  fab -H prahtdooley@10.58.143.142 build ad_hoc remote_deploy         
+  288  git pull
+  289  git reset --hard
+  290  fab -H prahtdooley@10.58.143.142 build ad_hoc remote_deploy         
+  291  git reset --hard
+  292  fab -H prahtdooley@10.58.143.142 build ad_hoc remote_deploy         
+  293  history 
+  294  git checkout bugfix/KTECHAUTOM-1824
+  295  fab -H prahtdooley@10.58.143.142 build ad_hoc remote_deploy         
+  296  git commit -am 'Fixed nslookup, removed glob search'
+  297  fab -H prahtdooley@10.58.143.142 build ad_hoc remote_deploy         
+  298  git commit -am 'Only return first found'
+  299  git push
+  300  fab -H prahtdooley@10.58.143.142 build ad_hoc remote_deploy         
+  301  git commit -am 'Add formating for minion map file'
+  302  git push
+  303  git checkout development 
+  304  git pull
+  305  git checkout bugfix/KTECHAUTOM-1824
+  306  git push
+  307  git checkout master 
+  308  git checkout bugfix/KTECHAUTOM-1824
+  309  git commit -am 'Update error message'
+  310  git push
+  311  git checkout master 
+  312  git pull
+  313  git checkout bugfix/KTECHAUTOM-1824
+  314  git checkout development 
+  315  fab -H prahtdooley@10.58.143.142 build ad_hoc remote_deploy          
+  316  git commit -am 'Update log message'
+  317  git push
+  318  git pull
+  319  git push
+  320  git checkout master 
+  321  git pull
+  322  git checkout development 
+  323  git pull
+  324  git commit -am 'Fixed break in wrong location'
+  325  git push
+  326  git commit -am 'Fixed break in wrong location'
+  327  git push
+  328  git commit -am 'Fixed break in wrong location'
+  329  git push
+  330  git commit -am 'Fixed break in wrong location'
+  331  git push
+  332  fab -H prahtdooley@10.58.143.142 build ad_hoc remote_deploy          
+  333  git commit -am 'Disable nslookup'
+  334  git push
+  335  git commit -am 'Enable it for now, at least we have partial working'
+  336  git push
+  337  fab -H prahtdooley@10.58.143.142 build ad_hoc remote_deploy          
+  338  git commit -am 'Fixed _get_minion_id_by_nslookup'
+  339  git push
+  340  git checkout master
+  341  git pull
+  342  git checkout development
+  343  git push
+  344  fab -H prahtdooley@10.58.143.142 build ad_hoc remote_deploy          
+  345  git commit -am 'Fixed duplicates'
+  346  git push
+  347  fab -H prahtdooley@10.58.143.142 build ad_hoc remote_deploy          
+  348  git commit -am 'Fixed issue with hostname map not updating on linux hosts'
+  349  git push
+  350  git checkout master
+  351  git pull
+  352  git checkout development
+  353  git pull
+  354  git checkout master
+  355  git pull
+  356  fab -H prahtdooley@10.58.143.142 build ad_hoc remote_deploy          
+  357  git checkout development
+  358  git pull
+  359  fab -H prahtdooley@10.58.143.142 build ad_hoc remote_deploy          
+  360  git commit -am 'fixed case matching in nslookup results'
+  361  git push
+  362  git checkout master 
+  363  git pull
+  364  git fetch
+  365  git pull
+  366  fab -H prahtdooley@10.58.143.142 build ad_hoc remote_deploy          
+  367  git checkout development 
+  368  git stash
+  369  git checkout development
+  370  fab -H prahtdooley@10.58.143.142 build ad_hoc remote_deploy          
+  371  git commit -am 'not_found_list not defined'
+  372  git push
+  373  fab -H prahtdooley@10.58.143.142 build ad_hoc remote_deploy          
+  374  git commit -am 'Fix not finding shortname'
+  375  git push
+  376  git checkout master
+  377  git pull
+  378  git fetch
+  379  git pull
+  380  git checkout development
+  381  git pull
+  382  git commit -am 'Fix not finding shortname'
+  383  git push
+  384  fab -H prahtdooley@10.58.143.142 build ad_hoc remote_deploy           
+  385  git checkout master
+  386  git stash
+  387  git checkout master 
+  388  git pull
+  389  git checkout development
+  390  fab -H prahtdooley@10.58.143.142 build ad_hoc remote_deploy           
+  391  git reset --hard
+  392  fab -H prahtdooley@10.58.143.142 build ad_hoc remote_deploy           
+  393  cd ~
+  394  ls -l
+  395  cd projects
+  396  ls -l
+  397  cd rest_api_demo/
+  398  ls -l
+  399  ./startserver.sh 
+  400  git pull
+  401  cd ..
+  402  ls -l
+  403  cd salt/
+  404  ls -l
+  405  cd salt-state/
+  406  ls -l
+  407  git checkout master 
+  408  git pull
+  409  git checkout development 
+  410  git pull
+  411  cd ../../
+  412  ls -l
+  413  cd rest_api_demo/
+  414  ls -l
+  415  ssh 165.22.32.130
+  416  cd ..
+  417  cd salt/salt-state/
+  418  fab -H prahtdooley@10.58.143.142 build ad_hoc remote_deploy            
+  419  git pull
+  420  fab -H prahtdooley@10.58.143.142 build ad_hoc remote_deploy            
+  421  cd ..
+  422  ls -l
+  423  cd ..
+  424  ls -l
+  425  cd rest_api_demo/
+  426  ls -l
+  427  source venv/bin/activate
+  428  ls -l
+  429  ./startserver.sh 
+  430  ls -l
+  431  cd ..
+  432  ls -l
+  433  cd salt/
+  434  ls -l
+  435  cd salt-state/
+  436  ls -l
+  437  ssh prahtdooley@10.58.143.142     
+  438  ls -l
+  439  ssh prahtdooley@10.58.143.142     
+  440  /usr/bin/python
+  441  ls -l
+  442  ssh prahtdooley@10.58.143.142     
+  443  fab -H prahtdooley@10.58.143.142 build ad_hoc remote_deploy     
+  444  git commit -am 'Fixed error when minion not found on validate'
+  445  git push
+  446  ssh prahtdooley@10.58.143.142     
+  447  source /home/prahtdooley/projects/rest_api_demo/venv/bin/activate
+  448  pwd
+  449  ./startserver.sh 
+  450  ssh prahtdooley@10.58.143.142     
+  451  exit
+  452  source /home/prahtdooley/projects/rest_api_demo/venv/bin/activate
+  453  ssh prahtdooley@10.58.143.142     
+  454  source /home/prahtdooley/projects/rest_api_demo/venv/bin/activate
+  455  ssh prahtdooley@10.58.143.142     
+  456  curl -X GET --header 'Accept: application/json' 'http://10.58.143.142:8888/api/build/Csvs/?per_page=10&page=1'
+  457  pwd
+  458  vi rest_api_demo/database/models.py
+  459  pwd
+  460  history | grep rsync
+  461  rsync -r ~/projects/rest_api_demo/ usddcknap10078:/home/prahtdooley
+  462  rsync -e ssh -r ~/projects/rest_api_demo/ usddcknap10078:/home/prahtdooley
+  463  rsync -e ssh -r ~/projects/rest_api_demo/ prahtdooley@usddcknap10078:/home/prahtdooley
+  464  rsync -avz ~/projects/rest_api_demo/ prahtdooley@usddcknap10078:/home/prahtdooley
+  465  cd ..
+  466  scp rest_api_demo/ prahtdooley@usddcknap10078:/home/prahtdooley
+  467  history 
+  468  rsync -avz ~/projects/rest_api_demo/ prahtdooley@10.58.143.142:/home/prahtdooley
+  469  rsync -avz ~/projects/rest_api_demo/ prahtdooley@10.58.143.142:/home/prahtdooley/projects/rest_api_demo
+  470  rsync -avz ~/projects/rest_api_demo/ prahtdooley@10.58.143.142:/home/prahtdooley/projects/rest_api_demo
+  471  ls -l
+  472  cd rest_api_demo/
+  473  ls -l
+  474  cd rest_api_demo
+  475  ls -l
+  476  cd ..
+  477  pwd
+  478  ls -l
+  479  source venv/bin/activate
+  480  ls -l
+  481  python reset_db.py 
+  482  history 
+  483  rsync -avz ~/projects/rest_api_demo/ prahtdooley@10.58.143.142:/home/prahtdooley/projects/rest_api_demo
+  484  history 
+  485  rsync -avz ~/projects/rest_api_demo/ prahtdooley@10.58.143.142:/home/prahtdooley/projects/rest_api_demo
+  486  source /home/prahtdooley/projects/rest_api_demo/venv/bin/activate
+  487  cd /tmp/
+  488  history 
+  489  scp prahtdooley@10.58.143.142:/home/prahtdooley/projects/rest_api_demo.tgz .
+  490  ifconfig 
+  491  ls -l
+  492  exit
+  493  ssh prahtdooley@10.58.143.142     
+  494  ls -l
+  495  pwd
+  496  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  497  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install --user dist/rest_api_demo-1.0.0.tar.gz 
+  498  ls -l
+  499  source venv/bin/activate
+  500  ls -l
+  501  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install --user dist/rest_api_demo-1.0.0.tar.gz 
+  502  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  503  ./startserver.sh 
+  504  ls -l
+  505  vi rest_api_demo/settings.py 
+  506  ifconfig 
+  507  vi rest_api_demo/settings.py 
+  508  pwd
+  509  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  510  ./startserver.sh 
+  511  ifcofnig -a
+  512  ifconfig -a 
+  513  sudo su - 
+  514  ./startserver.sh 
+  515  source /home/prahtdooley/projects/rest_api_demo/venv/bin/activate
+  516  ls -l
+  517  vi README.md 
+  518  cd rest_api_demo
+  519  ls -l
+  520  vi README.txt 
+  521  ls -l
+  522  cd ..
+  523  cat startserver.sh 
+  524  fab -H prahtdooley@10.58.143.142 build ad_hoc remote_deploy     
+  525  git checkout master
+  526  git pull
+  527  git checkout development
+  528  git pull
+  529  git commit -am 'Add 2019 Template'
+  530  git pull
+  531  fab -H prahtdooley@10.58.143.142 build ad_hoc remote_deploy     
+  532  git commit -am 'Updated to use Server Storage'
+  533  git push
+  534  git checkout master
+  535  git pull
+  536  git checkout development
+  537  git push
+  538  git pull
+  539  ssh usddcknrp90001.dallaslab.local
+  540  ssh prahtdooley@usddcknrp90001.dallaslab.local
+  541  ls -l
+  542  cd ~
+  543  ls -l
+  544  mkdir refactor
+  545  cd refactor/
+  546  vi csv_parse_input.py
+  547  cd ..
+  548  ls -l
+  549  rm -rf bin debug.out LICENSE.txt logging.conf README.md refactor/ requirements.txt rest_api_demo* sample_requests/ setup.* startserver.sh test_smb.py tests.old/ venv
+  550  ls -l
+  551  cd projects
+  552  ls -l
+  553  cd rest_api_demo/
+  554  ls -l
+  555  history 
+  556  scp prahtdooley@usddcknrp90001.dallaslab.local:10.58.143.142:/home/prahtdooley/projects/rest_api_demo.tgz .
+  557  scp prahtdooley@10.58.143.142:/home/prahtdooley/projects/rest_api_demo.tgz .
+  558  ls -l
+  559  mv rest_api_demo.tgz ../
+  560  cd ..
+  561  ls -l
+  562  mv rest_api_demo rest_api_demo.old
+  563  mkdir rest_api_demo
+  564  cd rest_api_demo
+  565  tar -xf ../rest_api_demo.tgz .
+  566  ls -l
+  567  ./startserver.sh 
+  568  pwd
+  569  source venv/bin/activate
+  570  ls -l
+  571  ./startserver.sh 
+  572  vi startserver.sh 
+  573  ls -l
+  574  cd rest_api_demo
+  575  ls -l
+  576  vi settings.py
+  577  ifconfig -a
+  578  vi settings.py
+  579  ls -l
+  580  cd ..
+  581  ls -l
+  582  ./startserver.sh 
+  583  netstat -ant | grep LISTEN
+  584  ifconfig -a
+  585  ls -l
+  586  vi setup.py 
+  587  vi rest_api_demo/settings.py
+  588  rm rest_api_demo/settings.pyc 
+  589  ./startserver.sh 
+  590  ls -l
+  591  pip uninstall rest-api_demo
+  592  ssh prahtdooley@10.58.143.142     
+  593  ./startserver.sh 
+  594  pwd
+  595  ls -l
+  596  source venv/bin/activate
+  597  ./startserver.sh 
+  598  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  599  ls -l
+  600  source venv/bin/activate
+  601  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  602  ./startserver.sh 
+  603  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  604  ./startserver.sh 
+  605  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  606  ./startserver.sh 
+  607  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  608  ./startserver.sh 
+  609  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  610  ./startserver.sh 
+  611  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  612  ./startserver.sh 
+  613  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  614  ./startserver.sh 
+  615  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  616  ./startserver.sh 
+  617  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  618  ./startserver.sh 
+  619  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  620  ./startserver.sh 
+  621  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  622  ./startserver.sh 
+  623  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  624  ./startserver.sh 
+  625  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  626  ./startserver.sh 
+  627  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  628  ./startserver.sh 
+  629  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  630  ./startserver.sh 
+  631  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  632  ./startserver.sh 
+  633  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  634  ./startserver.sh 
+  635  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  636  ./startserver.sh 
+  637  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  638  ./startserver.sh 
+  639  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  640  ./startserver.sh 
+  641  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  642  ./startserver.sh 
+  643  ls -l /tmp/
+  644  touch /tmp/test.csv
+  645  ./startserver.sh 
+  646  touch /tmp/test.csv
+  647  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  648  ./startserver.sh 
+  649  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  650  ./startserver.sh 
+  651  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  652  ./startserver.sh 
+  653  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  654  ./startserver.sh 
+  655  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  656  ./startserver.sh 
+  657  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  658  ./startserver.sh 
+  659  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  660  ./startserver.sh 
+  661  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  662  ./startserver.sh 
+  663  ls -l
+  664  git checkout master
+  665  git pull
+  666  fab -H prahtdooley@10.58.143.142 build ad_hoc remote_deploy     
+  667  git checkout development
+  668  fab -H prahtdooley@10.58.143.142 build ad_hoc remote_deploy     
+  669  git pull
+  670  git checkout bug/KTECHAUTOM-1927
+  671  git checkout master 
+  672  git fetch
+  673  git checkout bug/KTECHAUTOM-1927
+  674  git checkout bugfix/KTECHAUTOM-1927
+  675  git commit -am 'Remove empty lines'
+  676  git push
+  677  git checkout development
+  678  fab -H prahtdooley@10.58.143.142 build ad_hoc remote_deploy     
+  679  ssh prahtdooley@10.58.143.142     
+  680  ssh prahtdooley@10.58.143.142     
+  681  nslookup Usddcspcm00003.nix.us.kworld.kpmg.com
+  682  nslookup Usddclxp00113.nix.us.kworld.kpmg.com
+  683  nslookup Usmdckncm00001.nix.us.kworld.kpmg.com
+  684  nslookup Usmdckncm00002.nix.us.kworld.kpmg.com
+  685  nslookup Usmdclxp00533.nix.us.kworld.kpmg.com
+  686  nslookup Usmdclxp00534.nix.us.kworld.kpmg.com
+  687  nslookup Usmdclxp00528.nix.us.kworld.kpmg.com
+  688  nslookup Usmdcspcm00001.nix.us.kworld.kpmg.com
+  689  ssh prahtdooley@10.58.143.142     
+  690  git commit -am 'Update exception'
+  691  git push
+  692  git pull
+  693  git checkout master
+  694  git pull
+  695  git checkout development
+  696  git commit -am 'Update exception'
+  697  git push
+  698  ssh prahtdooley@10.58.143.142     
+  699  ./startserver.sh 
+  700  ls -l
+  701  source venv/bin/activate
+  702  ./startserver.sh 
+  703  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  704  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  705  ./startserver.sh 
+  706  pip install smtplib
+  707  ./startserver.sh 
+  708  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  709  ./startserver.sh 
+  710  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  711  ./startserver.sh 
+  712  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  713  ./startserver.sh 
+  714  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  715  ./startserver.sh 
+  716  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  717  ./startserver.sh 
+  718  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  719  ./startserver.sh 
+  720  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  721  ./startserver.sh 
+  722  source /home/prahtdooley/projects/rest_api_demo/venv/bin/activate
+  723  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  724  ./startserver.sh 
+  725  source /home/prahtdooley/projects/rest_api_demo/venv/bin/activate
+  726  ps -ef 
+  727  kill -9 12612
+  728  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  729  ./startserver.sh 
+  730  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  731  ./startserver.sh 
+  732  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  733  ./startserver.sh 
+  734  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  735  ./startserver.sh 
+  736  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  737  ./startserver.sh 
+  738  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  739  ./startserver.sh 
+  740  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  741  ./startserver.sh 
+  742  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  743  ./startserver.sh 
+  744  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  745  ./startserver.sh 
+  746  pip install smtp
+  747  pip install smtplib
+  748  ssh prahtdooley@10.58.143.142     
+  749  git status
+  750  git checkout master
+  751  git pull
+  752  git fetch
+  753  git pull
+  754  git checkout development
+  755  git pull
+  756  ssh prahtdooley@10.58.143.142     
+  757  git commit -am 'Do not remove host in prod'
+  758  git push
+  759  git checkout master
+  760  git fetch
+  761  git pull
+  762  git checkout development 
+  763  git push
+  764  source venv/bin/activate
+  765  ./startserver.sh 
+  766  vi test_list.py
+  767  python test_list.py 
+  768  vi test_list.py
+  769  python test_list.py 
+  770  vi test_list.py
+  771  python test_list.py 
+  772  vi test_list.py
+  773  python test_list.py 
+  774  ls -l
+  775  ssh prahtdooley@10.58.143.142     
+  776  ssh prahtdooley@10.58.143.142     
+  777  git checkout master 
+  778  git checkout feature/port900
+  779  git fetch
+  780  git checkout feature/port900
+  781  ls -l
+  782  cat /etc/salt/cloud.providers/ddc-vlab.conf
+  783  fab -H prahtdooley@10.58.143.142 build ad_hoc remote_deploy     
+  784  git checkout bugfix/remove_empty_from_host_list
+  785  git checkout master
+  786  git fetch
+  787  git checkout bugfix/remove_empty_from_host_list
+  788  fab -H prahtdooley@10.58.143.142 build ad_hoc remote_deploy     
+  789  git commit -am 'Remove empty items from list'
+  790  git push
+  791  git checkout master
+  792  git pull
+  793  git checkout development
+  794  git pull
+  795  git checkout bugfix/remove_empty_from_host_list
+  796  git push
+  797  git checkout development
+  798  git pull
+  799  fab -H prahtdooley@10.58.143.142 build ad_hoc remote_deploy     
+  800  git checkout master
+  801  git status
+  802  git commit -am 'Remove unreferenced _fail_reason'
+  803  git checkout master 
+  804  git fetch
+  805  git checkout feature/KTECHAUTOM-1970
+  806  fab -H prahtdooley@10.58.143.142 build ad_hoc remote_deploy     
+  807  git commit -am 'Initial testing ok'
+  808  git push
+  809  ssh prahtdooley@10.58.143.142     
+  810  git commit -am 'Batching works'
+  811  git push
+  812  history 
+  813  git checkout feature/port900
+  814  git pull
+  815  history | grep port900
+  816  ls -l
+  817  fab -H prahtdooley@10.58.143.142 build ad_hoc remote_deploy      
+  818  git commit -am 'Executing cmd in vm'
+  819  git push
+  820  git checkout feature/KTECHAUTOM-1970
+  821  git checkout feature/port900
+  822  git commit -am 'Add vm user/pass'
+  823  git checkout feature/port900
+  824  git stash
+  825  git checkout feature/port900
+  826  rm kpmg_checkport900.py
+  827  rm salt/base/_runners/kpmg_checkport900.py 
+  828  git checkout feature/port900
+  829  git commit -am 'Add vm user/pass'
+  830  git push
+  831  git checkout development
+  832  git pull
+  833  git checkout feature/port900
+  834  git commit -am 'Add vm user/pass'
+  835  git push
+  836  pwd
+  837  tar czf /tmp/rest_api_demo *
+  838  curl -X GET --header 'Accept: application/json' 'http://10.58.143.137:8888/api/build/servers/?per_page=10&page=1'
+  839  curl -X GET --header 'Accept: application/json' 'http://localhost:8888/api/build/servers/?per_page=10&page=1'
+  840  curl -X GET --header 'Accept: application/json' 'http://127.0.0.1:8888/api/build/servers/?per_page=10&page=1'
+  841  nc
+  842  netcat
+  843  history | grep ssh
+  844  telnet 10.58.143.142 22
+  845  netcat 
+  846  telnet 10.58.143.142 22
+  847  curl -v 22://10.58.143.142
+  848  curl -v winrm://10.58.143.142
+  849  curl -v smb://10.58.143.142
+  850  curl -v telnet://10.58.143.142:22
+  851  cd ..
+  852  ls -l
+  853  cd ..
+  854  ls -l
+  855  cd rest_api_demo
+  856  ./startserver.sh 
+  857  pwd
+  858  ls -l
+  859  source venv/bin/activate
+  860  ./startserver.sh 
+  861  ./startserver.sh &
+  862  netstat -ant | grep 8888
+  863  ls -l
+  864  wget http://10.58.143.137:8888/api/ 
+  865  ps -ef | grep start
+  866  ps -ef | grep start_server
+  867  ps -ef | grep startserver
+  868  kill -9 8428
+  869  ./startserver.sh 
+  870  nohup ./startserver.sh &
+  871  tail -f nohup.out 
+  872  ssh prahtdooley@10.58.143.142     
+  873  pwd
+  874  ls -l
+  875  ps -ef 
+  876  kill -9 9149
+  877  kill -9 9153 9154
+  878  ps -ef | grep nohup
+  879  ps -ef 
+  880  kill -9 9162
+  881  ./startserver.sh 
+  882  ls -l
+  883  source venv/bin/activate
+  884  ./startserver.sh 
+  885  history
+  886  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  887  ./startserver.sh 
+  888  ls -l
+  889  cd rest_api_demo
+  890  ls -l
+  891  cd api/
+  892  ls -l
+  893  cd util/
+  894  ls -l
+  895  cd ..
+  896  ls -l
+  897  history 
+  898  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  899  ./startserver.sh 
+  900  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  901  ./startserver.sh 
+  902  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  903  ./startserver.sh 
+  904  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  905  ./startserver.sh 
+  906  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  907  ./startserver.sh 
+  908  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  909  ./startserver.sh 
+  910  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  911  ./startserver.sh 
+  912  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  913  ./startserver.sh 
+  914  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  915  ./startserver.sh 
+  916  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  917  ./startserver.sh 
+  918  ls -l
+  919  python reset_db.py 
+  920  ./startserver.sh 
+  921  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  922  ./startserver.sh 
+  923  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  924  python reset_db.py 
+  925  ./startserver.sh 
+  926  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  927  python reset_db.py 
+  928  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  929  ./startserver.sh 
+  930  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  931  ./startserver.sh 
+  932  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  933  python reset_db.py 
+  934  ./startserver.sh 
+  935  ls -l
+  936  cd ..
+  937  cd rest_api_demo
+  938  ls -l
+  939  tail -f nohup.out 
+  940  ssh prahtdooley@10.58.143.142     
+  941  source venv/bin/activate
+  942  ./startserver.sh 
+  943  ifconfig 
+  944  ps -ef 
+  945  ps -ef | grep start
+  946  kill -9 17273
+  947  ls -l
+  948  ps -ef 
+  949  ps -ef | grep flaskr
+  950  kill -9 17274 17282
+  951  ls -l
+  952  ./startserver.sh 
+  953  history 
+  954  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  955  history 
+  956  python reset_db.py 
+  957  ./startserver.sh 
+  958  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  959  python reset_db.py 
+  960  ./startserver.sh 
+  961  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  962  python reset_db.py 
+  963  ./startserver.sh 
+  964  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  965  python reset_db.py 
+  966  ./startserver.sh 
+  967  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  968  python reset_db.py 
+  969  ./startserver.sh 
+  970  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  971  python reset_db.py 
+  972  ./startserver.sh 
+  973  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  974  python reset_db.py 
+  975  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  976  python reset_db.py 
+  977  ./startserver.sh 
+  978  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  979  python reset_db.py 
+  980  ./startserver.sh 
+  981  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz 
+  982  python reset_db.py 
+  983  ./startserver.sh 
+  984  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz && python reset_db.py
+  985  ./startserver.sh 
+  986  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz && python reset_db.py
+  987  ./startserver.sh 
+  988  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz && python reset_db.py
+  989  ./startserver.sh 
+  990  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz && python reset_db.py
+  991  ./startserver.sh 
+  992  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz && python reset_db.py
+  993  ./startserver.sh 
+  994  rm dist/rest_api_demo-1.0.0* && python setup.py sdist bdist_wheel && pip uninstall -y rest-api-demo && pip install dist/rest_api_demo-1.0.0.tar.gz && python reset_db.py
+  995  ./startserver.sh 
+  996  tar cf ~/rest_api_demo.tgz *
+  997  cp ~/rest_api_demo.tgz .
+  998  source /home/prahtdooley/projects/rest_api_demo/venv/bin/activate
+  999  salt-api --version
+ 1000  ssh prahtdooley@10.58.143.142     
+ 1001  ls -l
+ 1002  cd ..
+ 1003  ls -l
+ 1004  git checkout https://github.com/blinkesto/rest_api_demo.git
+ 1005  pwd
+ 1006  cd ..
+ 1007  ls -l
+ 1008  git clone https://github.com/blinkesto/rest_api_demo.git
+ 1009  cd rest_api_demo
+ 1010  ls -l
+ 1011  cp ~/rest_api_demo.tgz .
+ 1012  git commit -am 'Init'
+ 1013  git push
+ 1014  git checkout master 
+ 1015  git push -u origin master
+ 1016  git pull
+ 1017  ls -l
+ 1018  git commit -am 'Init'
+ 1019  git push -u origin master
+ 1020  git push
+ 1021  git pull
+ 1022  ls -l
+ 1023  git add rest_api_demo.tgz 
+ 1024  git commit -am 'Init'
+ 1025  git pull
+ 1026  git push
+ 1027  history 
+ 1028  ls -l
+ 1029  history > README 
