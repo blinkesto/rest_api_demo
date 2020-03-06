@@ -6,6 +6,7 @@ from werkzeug.exceptions import BadRequest
 import csv
 import io
 
+
 # CREATE CRUD METHODS
 def create_server(data):
     minion_id = data.get('minion_id')
@@ -34,6 +35,7 @@ def create_server(data):
 
     db.session.commit()        
 
+
 def update_server(server_id, data):
     print('Update Server')
     server = Server.query.filter(Server.id == server_id).one()
@@ -43,9 +45,19 @@ def update_server(server_id, data):
     servercsv = data.get('servercsv')
     os = data.get('os')
     fqdn = data.get('fqdn')
+    new_histories = data.get('histories')
+
+    for history in server.histories:
+        for new_history in new_histories:
+            if history.id == new_history['id']:
+                history.log = new_history['log']
+                db.session.commit()
+
+
 
     if data.get('build_id') is not None:
         server.build_id = data.get('build_id')
+        db.session.commit()
 
     db.session.add(server)
     db.session.commit()
@@ -112,7 +124,7 @@ def update_server_history(server_history_id, data):
     server_history.server_id = data.get('server_id')
     server_history.log = data.get('log')
     server_history.timestamp = data.get('timestamp')
-	
+
     db.session.add(build)
     db.session.commit()
 

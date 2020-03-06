@@ -2,7 +2,8 @@
 # 10.58.143.137
 # FLASK_SERVER_NAME = '172.31.47.65:8888'
 # FLASK_SERVER_NAME = 'ec2-18-188-136-183.us-east-2.compute.amazonaws.com:8888'
-FLASK_SERVER_NAME = 'ec2-3-18-92-220.us-east-2.compute.amazonaws.com:8888'
+# FLASK_SERVER_NAME = 'ec2-3-18-92-220.us-east-2.compute.amazonaws.com:8888'
+FLASK_SERVER_NAME = 'localhost:8888'
 
 FLASK_DEBUG = True  # Do not use debug mode in production
 
