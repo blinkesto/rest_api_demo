@@ -12,6 +12,8 @@ log = logging.getLogger(__name__)
 
 ns = api.namespace('qc/get_minion_id', description='Find the Salt Minion ID of a host')
 
+
+
 host_query = api.model('host_query', {
     'list': fields.List(fields.String), 
     })

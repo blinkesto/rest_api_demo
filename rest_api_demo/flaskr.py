@@ -9,6 +9,7 @@ from rest_api_demo.api.build.endpoints.server_histories import ns as server_hist
 from rest_api_demo.api.build.endpoints.csvs import ns as csv_namespace
 from rest_api_demo.api.build.endpoints.parse import ns as parse_namespace
 from rest_api_demo.api.qc.endpoints.send_mail import ns as send_mail
+from rest_api_demo.api.qc.endpoints.load_servers import ns as load_servers
 from rest_api_demo.api.qc.endpoints.get_minion_id import ns as get_minion_id
 from rest_api_demo.api.restplus import api
 from rest_api_demo.database import db
@@ -41,6 +42,7 @@ def initialize_app(flask_app, ):
     api.add_namespace(csv_namespace)
     api.add_namespace(parse_namespace)
     api.add_namespace(send_mail)
+    api.add_namespace(load_servers)    
     api.add_namespace(get_minion_id)
     
     flask_app.register_blueprint(blueprint)
