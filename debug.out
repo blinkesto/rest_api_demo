@@ -121,3 +121,91 @@ ModuleNotFoundError: No module named 'flask'
 2020-03-06 16:10:24,785 - werkzeug - INFO - 70.122.224.31 - - [06/Mar/2020 16:10:24] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
 2020-03-06 16:10:25,919 - werkzeug - INFO - 70.122.224.31 - - [06/Mar/2020 16:10:25] "GET /api/swagger.json HTTP/1.1" 200 -
 2020-03-06 16:10:25,931 - werkzeug - INFO - 70.122.224.31 - - [06/Mar/2020 16:10:25] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "rest_api_demo/flaskr.py", line 6, in <module>
+    from rest_api_demo.api.build.endpoints.servers import ns as server_namespace
+  File "/home/prahtdooley/projects/rest_api_demo/rest_api_demo/api/build/endpoints/servers.py", line 4, in <module>
+    from flask_restx import Resource
+ImportError: No module named flask_restx
+2020-03-06 11:40:23,126 - __main__ - INFO - >>>>> Starting development server at http://10.58.143.137:8888/api/ <<<<<
+ * Serving Flask app "flaskr" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+2020-03-06 11:40:23,133 - werkzeug - INFO -  * Running on http://10.58.143.137:8888/ (Press CTRL+C to quit)
+2020-03-06 11:40:23,136 - werkzeug - INFO -  * Restarting with stat
+2020-03-06 11:40:23,619 - __main__ - INFO - >>>>> Starting development server at http://10.58.143.137:8888/api/ <<<<<
+2020-03-06 11:40:23,626 - werkzeug - WARNING -  * Debugger is active!
+2020-03-06 11:40:23,627 - werkzeug - INFO -  * Debugger PIN: 288-488-263
+2020-03-06 11:40:43,393 - werkzeug - INFO - 10.32.74.7 - - [06/Mar/2020 11:40:43] "GET /api/ HTTP/1.1" 200 -
+2020-03-06 11:40:43,811 - werkzeug - INFO - 10.32.74.7 - - [06/Mar/2020 11:40:43] "GET /api/swagger.json HTTP/1.1" 200 -
+2020-03-06 11:41:05,119 - werkzeug - INFO - 10.32.74.7 - - [06/Mar/2020 11:41:05] "GET /api/build/builds/?page=1&bool=false&per_page=10 HTTP/1.1" 200 -
+2020-03-06 11:41:33,782 - werkzeug - INFO - 10.32.74.7 - - [06/Mar/2020 11:41:33] "GET /api/build/servers/?page=1&bool=true&per_page=10 HTTP/1.1" 200 -
+2020-03-06 11:46:37,264 - __main__ - INFO - >>>>> Starting development server at http://10.58.143.137:8888/api/ <<<<<
+ * Serving Flask app "flaskr" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+2020-03-06 11:46:37,271 - werkzeug - INFO -  * Running on http://10.58.143.137:8888/ (Press CTRL+C to quit)
+2020-03-06 11:46:37,274 - werkzeug - INFO -  * Restarting with stat
+2020-03-06 11:46:37,789 - __main__ - INFO - >>>>> Starting development server at http://10.58.143.137:8888/api/ <<<<<
+2020-03-06 11:46:37,795 - werkzeug - WARNING -  * Debugger is active!
+2020-03-06 11:46:37,797 - werkzeug - INFO -  * Debugger PIN: 288-488-263
+2020-03-06 11:46:45,202 - werkzeug - INFO - 10.32.74.7 - - [06/Mar/2020 11:46:45] "GET /api/ HTTP/1.1" 200 -
+2020-03-06 11:46:45,705 - werkzeug - INFO - 10.32.74.7 - - [06/Mar/2020 11:46:45] "GET /api/swagger.json HTTP/1.1" 200 -
+2020-03-06 11:46:45,774 - werkzeug - INFO - 10.32.74.7 - - [06/Mar/2020 11:46:45] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+2020-03-06 11:47:03,819 - werkzeug - INFO - 10.32.74.7 - - [06/Mar/2020 11:47:03] "GET /api/build/servers/?page=1&bool=false&per_page=10 HTTP/1.1" 200 -
+{u'status': u'string', u'build_id': u'string', u'fqdn': u'string', u'ip': u'string', u'histories': [{u'timestamp': u'2020-03-06T16:47:20.449Z', u'server_id': u'string', u'id': 0, u'log': u'string'}], u'minion_id': u'string', u'os': u'string', u'id': 0}
+2020-03-06 11:47:25,576 - werkzeug - INFO - 10.32.74.7 - - [06/Mar/2020 11:47:25] "POST /api/build/servers/ HTTP/1.1" 201 -
+Update a server
+Update Server
+2020-03-06 11:48:13,882 - werkzeug - INFO - 10.32.74.7 - - [06/Mar/2020 11:48:13] "PUT /api/build/servers/1 HTTP/1.1" 204 -
+2020-03-06 11:48:21,888 - werkzeug - INFO - 10.32.74.7 - - [06/Mar/2020 11:48:21] "GET /api/build/servers/?page=1&bool=false&per_page=10 HTTP/1.1" 200 -
+2020-03-06 11:50:54,862 - werkzeug - INFO - 10.32.74.7 - - [06/Mar/2020 11:50:54] "POST /api/qc/send_mail/ HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/home/prahtdooley/projects/rest_api_demo/venv/lib/python2.7/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/prahtdooley/projects/rest_api_demo/venv/lib/python2.7/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/prahtdooley/projects/rest_api_demo/venv/lib/python2.7/site-packages/flask_restx/api.py", line 599, in error_router
+    return original_handler(f)
+  File "/home/prahtdooley/projects/rest_api_demo/venv/lib/python2.7/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/prahtdooley/projects/rest_api_demo/venv/lib/python2.7/site-packages/flask_restx/api.py", line 597, in error_router
+    return self.handle_error(e)
+  File "/home/prahtdooley/projects/rest_api_demo/venv/lib/python2.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/prahtdooley/projects/rest_api_demo/venv/lib/python2.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/prahtdooley/projects/rest_api_demo/venv/lib/python2.7/site-packages/flask_restx/api.py", line 599, in error_router
+    return original_handler(f)
+  File "/home/prahtdooley/projects/rest_api_demo/venv/lib/python2.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/prahtdooley/projects/rest_api_demo/venv/lib/python2.7/site-packages/flask_restx/api.py", line 597, in error_router
+    return self.handle_error(e)
+  File "/home/prahtdooley/projects/rest_api_demo/venv/lib/python2.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/prahtdooley/projects/rest_api_demo/venv/lib/python2.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/prahtdooley/projects/rest_api_demo/venv/lib/python2.7/site-packages/flask_restx/api.py", line 339, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/prahtdooley/projects/rest_api_demo/venv/lib/python2.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/prahtdooley/projects/rest_api_demo/venv/lib/python2.7/site-packages/flask_restx/resource.py", line 44, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/prahtdooley/projects/rest_api_demo/rest_api_demo/api/qc/endpoints/send_mail.py", line 32, in post
+    ret_data = send_mail(data)
+  File "/home/prahtdooley/projects/rest_api_demo/rest_api_demo/api/qc/business.py", line 86, in send_mail
+    smtp = smtplib.SMTP(server)
+  File "/usr/lib64/python2.7/smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/lib64/python2.7/smtplib.py", line 315, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/usr/lib64/python2.7/smtplib.py", line 290, in _get_socket
+    return socket.create_connection((host, port), timeout)
+  File "/usr/lib64/python2.7/socket.py", line 553, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+gaierror: [Errno -2] Name or service not known
+2020-03-06 11:51:26,582 - werkzeug - INFO - 10.32.74.7 - - [06/Mar/2020 11:51:26] "POST /api/qc/send_mail/ HTTP/1.1" 200 -
