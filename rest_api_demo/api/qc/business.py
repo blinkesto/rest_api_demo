@@ -99,11 +99,12 @@ def send_mail(data):
 
 def get_minion_id(data):
     host_list = data.get('list')
-    fqdn_list = []
+    minion_id_list = []
 
     for fqdn in host_list:
         server = Server.query.filter(Server.fqdn == fqdn).one()
         print("Appending: {0}".format(server.minion_id))
-        fqdn_list.append(server.minion_id)
+        retval = {"minion_id": server.minion_id, "fqdn": fqdn}
+        minion_id_list.append(retval)
 
-    return fqdn_list
+    return retval
