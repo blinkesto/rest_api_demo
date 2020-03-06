@@ -10,15 +10,15 @@ alias deactivate 'test $?_OLD_VIRTUAL_PATH != 0 && setenv PATH "$_OLD_VIRTUAL_PA
 # Unset irrelevant variables.
 deactivate nondestructive
 
-setenv VIRTUAL_ENV "/home/prahtdooley/projects/rest_api_demo/venv"
+setenv VIRTUAL_ENV '/home/ec2-user/rest_api_demo/venv'
 
 set _OLD_VIRTUAL_PATH="$PATH:q"
 setenv PATH "$VIRTUAL_ENV:q/bin:$PATH:q"
 
 
 
-if ("" != "") then
-    set env_name = ""
+if ('' != "") then
+    set env_name = ''
 else
     set env_name = '('"$VIRTUAL_ENV:t:q"') '
 endif
