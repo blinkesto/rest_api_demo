@@ -53,6 +53,9 @@ def update_server(server_id, data):
 
 def delete_server(server_id):
     server = Server.query.filter(Server.id == server_id).one()
+    server_histories = ServerHistory.query.filter(Server.id == server_id)
+    for server_history in server_histories:
+        db.session.delete(server_history)
     db.session.delete(server)
     db.session.commit()
 
@@ -74,6 +77,7 @@ def create_build(data):
         print("IntegrityError: %s.  Build number: %s" % (ie.message, number))
         raise BadRequest("IntegrityError: %s.  Build number: %s" % (ie.message, number))
 
+
 def update_build(build_id, data):
     build = Build.query.filter(Build.id == build_id).one()
     build.number = data.get('number')
@@ -85,6 +89,7 @@ def delete_build(build_id):
     build = Build.query.filter(Build.id == build_id).one()
     db.session.delete(build)
     db.session.commit()
+
 
 # SERVER HISTORY 
 def create_server_history(data):
