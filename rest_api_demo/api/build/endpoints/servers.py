@@ -1,7 +1,7 @@
 import logging
 
 from flask import request
-from flask_restplus import Resource
+from flask_restx import Resource
 from rest_api_demo.api.build.business import create_server, update_server, delete_server
 from rest_api_demo.api.build.serializers import server, page_of_servers
 from rest_api_demo.api.build.parsers import pagination_arguments

@@ -1,7 +1,7 @@
 import logging
 
 from flask import request
-from flask_restplus import Resource
+from flask_restx import Resource
 from rest_api_demo.api.build.business import create_build, update_build, delete_build
 from rest_api_demo.api.build.serializers import build, page_of_builds
 from rest_api_demo.api.build.parsers import pagination_arguments

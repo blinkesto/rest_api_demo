@@ -3,7 +3,7 @@
 api/build/endpoint/new_endpoint.py
 ~~~python
     ...
-    from flask_restplus import Resource, fields
+    from flask_restx import Resource, fields
     ...
 
     ns = api.namespace('send_mail', description='Send an email')

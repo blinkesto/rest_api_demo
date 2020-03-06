@@ -1,7 +1,7 @@
 import logging
 
 from flask import request
-from flask_restplus import Resource, fields
+from flask_restx import Resource, fields
 from rest_api_demo.api.qc.business import send_mail
 from rest_api_demo.api.build.serializers import csv, page_of_csvs
 from rest_api_demo.api.build.parsers import pagination_arguments

@@ -1,5 +1,4 @@
-#!/home/ec2-user/rest_api_demo/venv/bin/python2
-
+#!/home/prahtdooley/projects/rest_api_demo/venv/bin/python2.7
 # -*- coding: utf-8 -*-
 import re
 import sys

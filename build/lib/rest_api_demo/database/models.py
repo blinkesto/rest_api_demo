@@ -3,7 +3,7 @@
 from datetime import datetime
 from rest_api_demo.database import db
 from sqlalchemy.orm import relationship
-from flask_restplus import fields
+from flask_restx import fields
 
 
 class Server(db.Model):

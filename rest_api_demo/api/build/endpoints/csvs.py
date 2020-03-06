@@ -1,7 +1,7 @@
 import logging
 
 from flask import request
-from flask_restplus import Resource
+from flask_restx import Resource
 from rest_api_demo.api.build.business import create_csv, update_csv, delete_csv
 from rest_api_demo.api.build.serializers import csv, page_of_csvs
 from rest_api_demo.api.build.parsers import pagination_arguments

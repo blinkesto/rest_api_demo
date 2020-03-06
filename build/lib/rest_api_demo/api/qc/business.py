@@ -1,4 +1,5 @@
 # Import model from database/models.py
+from rest_api_demo.database import db
 from sqlalchemy.exc import *
 from werkzeug.exceptions import BadRequest
 import socket
@@ -8,7 +9,7 @@ import time
 from email.mime.application import MIMEApplication
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
-
+from rest_api_demo.database.models import Server
 
 def formatdate(timeval=None, localtime=False, usegmt=False):
     """Returns a date string as specified by RFC 2822, e.g.:
@@ -95,7 +96,15 @@ def send_mail(data):
 
     return retval
 
+
 def get_minion_id(data):
     host_list = data.get('list')
+    minion_id_list = []
 
-    return host_list
+    for fqdn in host_list:
+        server = Server.query.filter(Server.fqdn == fqdn).one()
+        print("Appending: {0}".format(server.minion_id))
+        retval = {"minion_id": server.minion_id, "fqdn": fqdn}
+        minion_id_list.append(retval)
+
+    return retval
